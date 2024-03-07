@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "proj2"
+version = "0.1.0"
+description = ""
+authors = ["Felix Qvist <felix.qvist@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+proj3 = {path = "../proj3", optional = true}
+
+[tool.poetry.extras]
+example = ["proj3"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
